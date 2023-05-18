@@ -155,7 +155,43 @@
         }
 
 
+        @media only screen and (max-width: 768px){
+            header{
+                display: inline-block;
+            }
+            header img{
+                margin: 0;
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                margin: 0;
+            }
+            nav a{
+                margin: 15px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bolder;
+                color: black;
+            } 
+        }
 
+        
+        @media only screen and (max-width:550px){
+            .container{
+                overflow-y: auto;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.5fr 0.5fr 1.5fr 1.5fr;
+                grid-template-areas:
+                "header"
+                "main"
+                "sidebar"
+                "content1"
+                "content2"
+                "content3"
+                "footer";
+            }
+        }
     </style>
 </body>
 </html>
