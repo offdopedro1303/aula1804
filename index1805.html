@@ -57,6 +57,29 @@
             text-transform: uppercase;
             text-align: center;
         }
+        .container{
+            display: grid;
+            height: 100vh;
+            overflow-y: hidden;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 0.3fr 1.5fr 1.5fr 0.7fr;
+            grid-template-areas: 
+            "header header header header"
+            "main main main sidebar"
+            "content1 content2 content3 sidebar"
+            "footer footer footer footer";
+            gap: 0.6%;
+        }
+
+        header{
+            background: #a7ffeb;
+            grid-area: header;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
     </style>
 </body>
 </html>
